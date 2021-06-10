@@ -1,0 +1,575 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #F2F2F2;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: KumbhSans-Bold;
+  src: url("../fonts/KumbhSans-Bold.ttf");
+}
+
+@font-face {
+  font-family: KumbhSans-Regular;
+  src: url("../fonts/KumbhSans-Regular.ttf");
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1210px;
+  margin: 0 auto;
+}
+
+.btn {
+  border: 0;
+  outline: 0;
+  border-radius: 28px;
+  width: 171px;
+  padding: 14px;
+  text-align: center;
+}
+
+.btn:hover {
+  background: #829CFF;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+
+header {
+  overflow-x: clip;
+
+  .container {
+    position: relative;
+
+    .logo {
+      font-family: KumbhSans-Bold, sans-serif;
+      font-size: 18px;
+      padding-top: 81px;
+
+      img {
+        vertical-align: middle;
+        margin-right: 9px;
+      }
+    }
+  }
+}
+
+main {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 174px;
+
+    .info {
+      max-width: 540px;
+
+      h1 {
+        font-family: KumbhSans-Bold, sans-serif;
+        font-size: 56px;
+        line-height: 64px;
+        color: #333950;
+      }
+
+      .description {
+        font-family: KumbhSans-Regular, sans-serif;
+        font-size: 18px;
+        line-height: 28px;
+        color: #747B95;
+        margin-top: 24px;
+        margin-bottom: 32px;
+      }
+
+      .getStarted {
+        background: #5175FF;
+        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+        font-family: KumbhSans-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        color: #fff;
+      }
+
+      .getStarted:hover {
+        background: #829CFF;
+        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+      }
+    }
+  }
+
+  .mainStatistic {
+    background: #5175FF;
+    box-shadow: 0px 50px 50px -25px rgba(75, 92, 154, 0.247159);
+    border-radius: 13px;
+    width: 224px;
+    height: 483px;
+
+    .mainStatisticPercent {
+      background-image: url("../images/Oval.png");
+      margin: 35px auto 50px auto;
+      font-family: KumbhSans-Bold, sans-serif;
+      font-size: 32px;
+      line-height: 112px;
+      width: 112px;
+      text-align: center;
+      color: #5CFCD3;
+    }
+
+    .mainStatisticCount {
+      text-align: center;
+      font-family: KumbhSans-Bold, sans-serif;
+      font-size: 40px;
+      line-height: 64px;
+      color: #FFFFFF;
+    }
+
+    ul {
+      list-style: none;
+
+
+      .squareLi {
+        height: 14px;
+        background: #7DA7FF;
+        border-radius: 7px;
+        margin: 10px 0 10px 30px;
+        position: relative;
+      }
+
+      .squareLi:before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        position: absolute;
+        top: 0;
+        left: -29px;
+      }
+
+      .squareLi1 {
+        width: 131px;
+      }
+
+      .squareLi2 {
+        width: 83px;
+      }
+
+      .squareLi3 {
+        width: 131px;
+      }
+
+      .squareLi4 {
+        width: 83px;
+      }
+
+      .squareLi5 {
+        width: 131px;
+      }
+    }
+  }
+}
+.canvasImg{
+  margin-top: 25px;
+}
+.actionCard {
+  position: relative;
+  bottom: -255px;
+  margin-top: -135px;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+
+    .card {
+      background: #FFFFFF;
+      width: 350px;
+      //height: 508px;
+      padding-bottom: 40px;
+      box-sizing: border-box;
+      padding-top: 40px;
+      text-align: center;
+      border-radius: 13px;
+      z-index: 1;
+
+      .subscription {
+        font-family: KumbhSans-Bold, sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        color: #333950;
+      }
+
+      .subscriptionCost {
+        font-family: KumbhSans-Bold, sans-serif;
+        margin-top: 40px;
+        margin-bottom: 8px;
+        font-size: 56px;
+        line-height: 64px;
+        color: #333950;
+      }
+
+      .subscriptionCostDescription {
+        font-family: KumbhSans-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #333950;
+        margin-bottom: 48px;
+      }
+
+      .property {
+        margin-top: 8px;
+        margin-bottom: 8px;
+        font-family: KumbhSans-Regular, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #747B95;
+      }
+
+      .actionBtn {
+        margin-top: 24px;
+        background: rgba(81, 117, 255, 0.15);
+        mix-blend-mode: normal;
+        padding: 14px 42px;
+        border-radius: 28px;
+        border: 0;
+        outline: 0;
+        color: #5175FF;
+        font-family: KumbhSans-Bold, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      .actionBtn:hover {
+        background: rgba(81, 117, 255, 0.35);
+
+      }
+    }
+
+    .card.cardBlue {
+      background: #5175FF;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      .subscription {
+        color: #FFFFFF;
+      }
+
+      .subscriptionCost {
+        color: #FFFFFF;
+      }
+
+      .subscriptionCostDescription {
+        color: #FFFFFF;
+      }
+
+      .property {
+        color: rgb(255, 255, 255);
+      }
+
+      .actionBtn {
+        background: #FFFFFF;
+      }
+
+      .actionBtn:hover {
+        color: #829CFF;
+      }
+    }
+  }
+}
+
+footer {
+  background: #25293A;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 0;
+
+  .container {
+    padding-top: 336px;
+    position: relative;
+    padding-bottom: 91px;
+
+    .coming {
+      font-family: KumbhSans-Bold, sans-serif;
+      font-size: 16px;
+      line-height: 48px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+
+      .comingDate {
+        font-family: KumbhSans-Bold, sans-serif;
+        font-size: 16px;
+        line-height: 48px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: #5175FF;
+      }
+    }
+
+    .footerActions {
+      display: flex;
+      justify-content: space-between;
+
+      .timerBlock {
+        display: flex;
+        justify-content: space-between;
+        width: 448px;
+
+        .timeBlock {
+          padding: 18px;
+          background: #333950;
+          border-radius: 13px;
+          width: 100px;
+          box-sizing: border-box;
+          text-align: center;
+
+          .digit {
+            font-family: KumbhSans-Bold, sans-serif;
+            font-size: 56px;
+            line-height: 48px;
+            color: #FFFFFF;
+          }
+
+          .timeWord {
+            font-family: KumbhSans-Bold, sans-serif;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: center;
+            margin-top: 6px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.5;
+          }
+        }
+      }
+
+      .footerBtn {
+        padding: 14px 40px;
+        background: #5175FF;
+        border-radius: 28px;
+        font-family: KumbhSans-Bold, sans-serif;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        border: 0;
+        outline: 0;
+        color: #FFFFFF;
+      }
+
+      .footerBtn:hover {
+        background: #829CFF;
+      }
+    }
+  }
+}
+
+
+#upSquare1 {
+  position: absolute;
+  top: -168px;
+  right: -168px;
+  height: 666px;
+  width: 666px;
+  background: transparent;
+  margin: 10px auto;
+  border-radius: 50%;
+  transform: rotate(180deg);
+  animation: glitch 10s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #747B95;
+  z-index: -1;
+
+  #upSquare2 {
+    height: 418px;
+    width: 418px;
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(720deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #747B95;
+    animation: glitch 6s linear infinite;
+
+    #upSquare3 {
+      width: 333px;
+      height: 333px;
+      background: transparent;
+      border-radius: 50%;
+      transform: rotate(270deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #747B95;
+      animation: glitch 8s linear infinite;
+
+    }
+  }
+}
+
+#upSquare1:before, #upSquare2:before, #upSquare3:before, #downSquare1:before, #downSquare2:before,
+#downSquare3:before, #downSquare4:before, #downSquare5:before, #downSquare6:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  height: 11px;
+  width: 11px;
+  border-radius: 50%;
+  background: #D8DAE0;
+}
+
+
+#downSquare1 {
+  position: absolute;
+  top: -614px;
+  //bottom: -819px;
+  left: -702px;
+  height: 2036px;
+  width: 2036px;
+  background: transparent;
+  margin: 10px auto;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  animation: glitch 11s linear infinite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #747B95;
+  z-index: -1;
+
+  #downSquare2 {
+    height: 1440px;
+    width: 1440px;
+    background: transparent;
+    border-radius: 50%;
+    transform: rotate(720deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #747B95;
+    animation: glitch 6s linear infinite;
+
+    #downSquare3 {
+      height: 1301px;
+      width: 1301px;
+      background: transparent;
+      border-radius: 50%;
+      transform: rotate(720deg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #747B95;
+      animation: glitch 6s linear infinite;
+
+      #downSquare4 {
+        height: 824px;
+        width: 824px;
+        background: transparent;
+        border-radius: 50%;
+        transform: rotate(720deg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #747B95;
+        animation: glitch 6s linear infinite;
+
+        #downSquare5 {
+          height: 444px;
+          width: 444px;
+          background: transparent;
+          border-radius: 50%;
+          transform: rotate(720deg);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: 1px solid #747B95;
+          animation: glitch 6s linear infinite;
+
+          #downSquare6 {
+            height: 313px;
+            width: 313px;
+            background: transparent;
+            border-radius: 50%;
+            transform: rotate(720deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #747B95;
+            animation: glitch 6s linear infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+#cardBlueSquare1 {
+  position: absolute;
+  top: -379px;
+  left: -265px;
+  height: 880px;
+  width: 880px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  z-index: -1;
+
+  #cardBlueSquare2 {
+    height: 468px;
+    width: 468px;
+    background: transparent;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    #cardBlueSquare3 {
+      height: 276px;
+      width: 276px;
+      background: transparent;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+
+      #cardBlueSquare4 {
+        height: 204px;
+        width: 204px;
+        background: transparent;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+
+      }
+    }
+  }
+}
+
+@keyframes glitch {
+  from {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(330deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+@import "adaptive";
